@@ -6,7 +6,7 @@
             if (currentObj[key]) {
                 currentObj = currentObj[key];
             } else {
-                return '';
+                currentObj = '';
             };
         }));
         return currentObj;

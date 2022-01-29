@@ -1,12 +1,12 @@
-//const selector = (obj, keys) => {
-// Ваше решение должно быть здесь
-function selector(obj, path) {
+const selector = (obj, path) => {
+    // Ваше решение должно быть здесь
+    // function selector(obj, path) {
     let currentObj = obj;
     path.forEach((key => {
         if (currentObj[key]) {
             currentObj = currentObj[key];
         } else {
-            currentObj = '';
+            return '';
         };
     }));
     return currentObj;
